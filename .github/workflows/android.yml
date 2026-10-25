@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - 'FreeBeat_Completo_E_Background.zip'
+      - 'FreeBeat_YouTube_InApp_E.zip'
       - '.github/workflows/android.yml'
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Extract project
-        run: unzip -q FreeBeat_Completo_E_Background.zip
+        run: unzip -q FreeBeat_YouTube_InApp_E.zip
 
       - name: Set up Java
         uses: actions/setup-java@v4
