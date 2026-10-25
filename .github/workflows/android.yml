@@ -28,10 +28,10 @@ jobs:
 
       - name: Extract Android project
         run: |
-          unzip -o ERiBeat_Project.zip -d ERiBeat_Project
+          unzip -o ERiBeat_Project_FIXED.zip -d ERiBeat_Project_FIXED
 
       - name: Build APK
-        run: gradle -p ERiBeat_Project assembleDebug
+        run: gradle -p ERiBeat_Project_FIDED assembleDebug
 
       - name: Save APK
         uses: actions/upload-artifact@v4
